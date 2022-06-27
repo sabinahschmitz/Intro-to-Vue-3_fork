@@ -6,22 +6,45 @@
     <!-- Import Styles -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <!-- Import Vue.js -->
-    <script src="https://unpkg.com/vue@3.0.0-beta.12/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
   </head>
   <body>
     <div id="app">
+<<<<<<< HEAD
       <h1>{{product}}</h1>
       <!-- this refers to our product in our data -->
       <p>{{description + product}} </p>
+=======
+      <div class="nav-bar"></div>
+      
+      <div class="product-display">
+        <div class="product-container">
+          <div class="product-image">
+            <!-- image goes here -->
+            <img v-bind:src="image">
+            <a v-bind:href="url">Click here </a>
+          </div>
+          <div class="product-info">
+            <h1>{{ product }}</h1>
+          </div>
+        </div>
+      </div>
+>>>>>>> L3-start
     </div>
 
     <!-- Import App -->
     <script src="./main.js"></script>
 
+<<<<<<< HEAD
     <!-- Mount App adds app into DOM -->
     <script>
       const mountedApp = app.mount('#app')
       // the function, mounted app, takes the const app from the main.js file and mounts it on the the Id "app" in the dom
+=======
+    <!-- Mount App -->
+    <script>
+      const mountedApp = app.mount('#app')
+>>>>>>> L3-start
     </script>
   </body>
 </html>
